@@ -1,12 +1,12 @@
 # Seoul-Bike-sharing-demand-prediction-prajwal
 
-**Problem statement** :
+# Problem statement :
 Currently Rental bikes are introduced in many urban cities for the enhancement of mobility comfort. It is important to make the rental bike available and accessible to the public at the right time as it lessens the waiting time. Eventually, providing the city with a stable supply of rental bikes becomes a major concern. The crucial part is the prediction of bike count required at each hour for the stable supply of rental bikes.
 
 ![image](https://user-images.githubusercontent.com/67784512/211485825-280d1b5d-5835-4d8c-95eb-e2cf6ede9f88.png)
 
 
-**Data Discription** :
+# Data Discription :
 1. Date : year-month-day
 2. Rented Bike count - Count of bikes rented at each hour
 3. Hour - Hour of he day
@@ -22,10 +22,11 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
 13. Holiday - Holiday/No holiday
 14. Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)
 
-**variables discription** :
+**ariables discription** :
+
 ![Screenshot (72)](https://user-images.githubusercontent.com/67784512/211484621-09b0baee-c979-427b-9cdb-1df8685014c2.png)
 
-**EDA** : Exploratory data analysis
+# EDA : Exploratory data analysis
  
  Checking data distribution using distplot and boxplot.
  
@@ -44,7 +45,7 @@ Checking multicollinearity using seaborn libraries.
 
 Checking VIF score for all independent values. And, removing where VIF score is higher.
 
-And, again plot the heatmap using seaborn with our dependent variable.
+And, again ploting the heatmap using seaborn with our dependent variable.
 
 
 
@@ -69,21 +70,24 @@ Building some linear regression model to test which model gives better results.
 5. GradientBoosting Regressor
 
 
-**Conclusion**
+# Conclusion
 
 Functioning day is the most influencing feature and temperature is at the second place for LinearRegressor.
 Temperature is the most important feature for DecisionTree, RandomForest and GradientBoosting Regressor.
 Functioning day is the most important feature and Winter is the second most for XGBoostRegressor.
 
-# RMSE Comparisons:
+**RMSE Comparisons** :
 
-LinearRegressor RMSE : 370.46
-DecissionTreeRegressor RMSE : 302.53
-RandomForestRegressor RMSE : 290.02
-XGBoostRegressor RMSE : 242.72
-GradientBoostingRegressor RMSE : 248.18
+1. LinearRegressor RMSE : 370.46
+2. DecissionTreeRegressor RMSE : 302.53
+3. RandomForestRegressor RMSE : 290.02
+4. XGBoostRegressor RMSE : 242.72
+5. GradientBoostingRegressor RMSE : 248.18
+
 The feature temperature is on the top list for all the regressors except XGBoost.
+
 XGBoost is acting different from all the regressors as it is considering whether it is winter or not. And is it a working day or not. Though winter is also a function of temperature only but it seems this trick of XGBoost is giving better results.
+
 XGBoostRegressor has the Least Root Mean Squared Error. So It can be considered as the best model for given problem.
 
 
