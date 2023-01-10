@@ -6,7 +6,7 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
 ![image](https://user-images.githubusercontent.com/67784512/211485825-280d1b5d-5835-4d8c-95eb-e2cf6ede9f88.png)
 
 
-# Data Discription :
+# Data Description :
 1. Date : year-month-day
 2. Rented Bike count - Count of bikes rented at each hour
 3. Hour - Hour of he day
@@ -22,7 +22,7 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
 13. Holiday - Holiday/No holiday
 14. Functional Day - NoFunc(Non Functional Hours), Fun(Functional hours)
 
-**ariables discription** :
+**Variables description** :
 
 ![Screenshot (72)](https://user-images.githubusercontent.com/67784512/211484621-09b0baee-c979-427b-9cdb-1df8685014c2.png)
 
@@ -41,15 +41,15 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
     
 Ploting all independent values with respect to Rental Bike Count using regplot.
 
-Checking multicollinearity using seaborn libraries.
+Checking multicollinearity Heatmap using seaborn libraries.
 
-Checking VIF score for all independent values. And, removing where VIF score is higher.
+Checking VIF score for all independent values. And, removing all where VIF score is higher.
 
-And, again ploting the heatmap using seaborn with our dependent variable.
+And, again ploting the heatmap with our dependent variable.
 
 
 
-# Modek building part
+# Model building part
 Know let's move to model building part
 
 before moving on model building part we has to scale our dataset. Here we use MinMaxScaler()
