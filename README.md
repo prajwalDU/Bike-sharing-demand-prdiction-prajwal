@@ -8,8 +8,11 @@ Currently Rental bikes are introduced in many urban cities for the enhancement o
 
 **Data Discription** :
 1. Date : year-month-day
+
 2. Rented Bike count - Count of bikes rented at each hour
+
 3. Hour - Hour of he day
+
 4. Temperature-Temperature in Celsius
 5. Humidity - %
 6. Windspeed - m/s
@@ -46,7 +49,9 @@ Checking VIF score for all independent values. And, removing where VIF score is 
 
 And, again plot the heatmap using seaborn with our dependent variable.
 
-Know let's move to model building part
+
+
+Know let's move to **model building** part
 
 before moving on model building part we has to scale our dataset. Here we use MinMaxScaler()
 
@@ -54,6 +59,12 @@ Defining a function to train the input model and print evaluation matrix.
   In the function we Fitting model to test multiple algorithms to find which algorithms gives best result
   write evaluation matrix which contains mse,rmse,r2,etc
   finally we plot the result and return.
+
+Providing the range of values for hyperparameters such as n_estimators, max_depth, min_sample_split, max_sample_split, eta.
+
+Building some linear regression model to test which model gives better results.
+
+1. Linear Regression
 
 
 
