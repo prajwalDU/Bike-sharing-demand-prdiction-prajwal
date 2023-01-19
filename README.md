@@ -70,13 +70,15 @@ Building some linear regression model to test which model gives better results.
 5. GradientBoosting Regressor
 
 
-# Conclusion
+# We observed following results after completing the task:
 
-Functioning day is the most influencing feature and temperature is at the second place for LinearRegressor.
-Temperature is the most important feature for DecisionTree, RandomForest and GradientBoosting Regressor.
-Functioning day is the most important feature and Winter is the second most for XGBoostRegressor.
+* Functioning day is the most influencing feature and temperature is at the second place for LinearRegressor.
 
-**RMSE Comparisons** :
+* Temperature is the most important feature for DecisionTree, RandomForest and GradientBoosting Regressor.
+
+* Functioning day is the most important feature and Winter is the second most for XGBoostRegressor.
+
+* RMSE Comparisons :
 
 1. LinearRegressor RMSE : 370.46
 2. DecissionTreeRegressor RMSE : 302.53
@@ -84,14 +86,14 @@ Functioning day is the most important feature and Winter is the second most for 
 4. XGBoostRegressor RMSE : 242.72
 5. GradientBoostingRegressor RMSE : 248.18
 
-The feature temperature is on the top list for all the regressors except XGBoost.
+* The feature temperature is on the top list for all the regressors except XGBoost.
 
-XGBoost is acting different from all the regressors as it is considering whether it is winter or not. And is it a working day or not. Though winter is also a function of temperature only but it seems this trick of XGBoost is giving better results.
+* XGBoost is acting different from all the regressors as it is considering whether it is winter or not. And is it a working day or not. Though winter is also a function of temperature only but it seems this trick of XGBoost is giving better results.
 
-XGBoostRegressor has the Least Root Mean Squared Error. So It can be considered as the best model for given problem.
+* XGBoostRegressor has the Least Root Mean Squared Error. So It can be considered as the best model for given problem.
 
 
-
+**XGBoost is giving the best accuracy of around 82%**
 
 
 
